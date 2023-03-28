@@ -7,10 +7,18 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField]
     int timeToEnd;
-    bool gamePaused = false;
+    public int Points;
 
+    public int redKeys = 0;
+    public int greenKeys = 0;
+    public int goldKeys = 0;
+
+
+    bool gamePaused = false;
     bool endGame = false;
     bool win = false;
+
+
 
     void Start() {
         if (Instance == null)
@@ -25,6 +33,7 @@ public class GameManager : MonoBehaviour {
 
     void Update() {
         PauseCheck();
+        PickUpCheck();
     }
 
     void Stopper() {
@@ -66,6 +75,14 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    void PickUpCheck() {
+        if (Input.GetKeyDown(KeyCode.L)) {
+            Debug.Log("Time: " + timeToEnd);
+            Debug.Log("Points: " + Points);
+            Debug.Log("Red Keys: " + redKeys + "GreenKeys: " + greenKeys + "GoldKeys: " + goldKeys);
+        }
+    }
+
 
     public void EndGame() {
         CancelInvoke("Stopper");
@@ -78,4 +95,27 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public void AddPoints(int points) {
+        Points += points;
+    }
+
+    public void AddTime(int timeToAdd) {
+        timeToEnd = timeToAdd;
+    }
+    public void FreezTime(int freez) {
+        CancelInvoke("Stopper");
+        InvokeRepeating("Stopper", freez, 1);
+    }
+
+    public void AddKey(KeyColor keyColor) {
+        if (keyColor == KeyColor.Red) {
+            redKeys++;
+        }
+        else if (keyColor == KeyColor.Green) {
+            greenKeys++;
+        }
+        else {
+            goldKeys++;
+        }
+    }
 }
