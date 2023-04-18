@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 48126306}
   - component: {fileID: 48126305}
   - component: {fileID: 48126304}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 157663441}
   - component: {fileID: 157663440}
   - component: {fileID: 157663439}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -860,7 +860,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d2677e4f5aac2149b67dd6c2f731da6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -943,7 +943,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 961559a687b811442932d5ac774ec7fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1079,7 +1079,7 @@ GameObject:
   - component: {fileID: 730904345}
   - component: {fileID: 730904344}
   - component: {fileID: 730904343}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1305,7 +1305,7 @@ GameObject:
   - component: {fileID: 785318766}
   - component: {fileID: 785318765}
   - component: {fileID: 785318764}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1402,7 +1402,7 @@ GameObject:
   - component: {fileID: 854174953}
   - component: {fileID: 854174952}
   - component: {fileID: 854174951}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1596,7 +1596,7 @@ GameObject:
   - component: {fileID: 887073164}
   - component: {fileID: 887073163}
   - component: {fileID: 887073162}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2006,6 +2006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1152386407}
   - component: {fileID: 1152386409}
+  - component: {fileID: 1152386410}
   m_Layer: 0
   m_Name: PortalCamera
   m_TagString: Untagged
@@ -2059,7 +2060,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: dc8674c8719b5fa49b9ed615efa11424, type: 2}
   m_TargetDisplay: 1
@@ -2071,6 +2072,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1152386410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152386406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc4ccdd2c3ea994cb666b5c1ad52fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 963194228}
+  portal: {fileID: 1751642637}
+  otherPortal: {fileID: 1834901972}
+  myAngle: 0
 --- !u!1 &1407250639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,6 +2220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1446748514}
   - component: {fileID: 1446748515}
+  - component: {fileID: 1446748516}
   m_Layer: 0
   m_Name: PortalCamera
   m_TagString: Untagged
@@ -2256,7 +2274,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: c06741cb45cca764ab2b50eb23ad39bc, type: 2}
   m_TargetDisplay: 2
@@ -2268,6 +2286,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1446748516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446748513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc4ccdd2c3ea994cb666b5c1ad52fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 963194228}
+  portal: {fileID: 1834901972}
+  otherPortal: {fileID: 1751642637}
+  myAngle: 0
 --- !u!1 &1482638722
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,7 +2314,7 @@ GameObject:
   - component: {fileID: 1482638725}
   - component: {fileID: 1482638724}
   - component: {fileID: 1482638723}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2776,6 +2810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1751642637}
+  - component: {fileID: 1751642638}
   m_Layer: 0
   m_Name: PortalA
   m_TagString: Untagged
@@ -2804,6 +2839,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1751642638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751642636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2baa72dc4ad3f6540b58ae8a0be75446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 1152386409}
+  player: {fileID: 0}
+  myRenderPlane: {fileID: 660162261}
+  myColliderPlane: {fileID: 1524644141}
+  otherPortal: {fileID: 1834901973}
+  material: {fileID: 2100000, guid: 961559a687b811442932d5ac774ec7fc, type: 2}
 --- !u!1 &1834901971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2813,6 +2866,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1834901972}
+  - component: {fileID: 1834901973}
   m_Layer: 0
   m_Name: PortalB
   m_TagString: Untagged
@@ -2828,7 +2882,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834901971}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 2.86, y: 1.42, z: -45.75}
+  m_LocalPosition: {x: 2.86, y: 1.42, z: -41.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2841,6 +2895,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1834901973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834901971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2baa72dc4ad3f6540b58ae8a0be75446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 1446748515}
+  player: {fileID: 0}
+  myRenderPlane: {fileID: 479261671}
+  myColliderPlane: {fileID: 912374479}
+  otherPortal: {fileID: 1751642638}
+  material: {fileID: 2100000, guid: 961559a687b811442932d5ac774ec7fc, type: 2}
 --- !u!1 &1849991257
 GameObject:
   m_ObjectHideFlags: 0
