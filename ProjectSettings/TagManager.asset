@@ -7,6 +7,7 @@ TagManager:
   - HighSpeed
   - LowSpeed
   - PickUp
+  - Wall
   layers:
   - Default
   - TransparentFX
