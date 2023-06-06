@@ -15,6 +15,8 @@ public class LevelGenerator : MonoBehaviour
     {
         Color pixelColor = map.GetPixel(x, y);
 
+        Debug.Log(pixelColor);
+
         if (pixelColor.a == 0)
         {
             return;
