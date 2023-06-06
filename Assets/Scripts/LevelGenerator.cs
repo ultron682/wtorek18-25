@@ -25,7 +25,12 @@ public class LevelGenerator : MonoBehaviour
             if (colorMapping.color == pixelColor)
             {
                 Vector3 position = new Vector3(x, 0, y) * offset;
-                Instantiate(colorMapping.prefab, position, Quaternion.identity, transform);
+                GameObject tile = Instantiate(colorMapping.prefab, position, Quaternion.identity, transform);
+
+                if (tile.tag == "Wall")
+                {
+                    tile.transform.position += new Vector3(0, 2.5f, 0);
+                }
             }
         }
     }
