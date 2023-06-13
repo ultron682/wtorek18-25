@@ -56,12 +56,14 @@ public class GameManager : MonoBehaviour {
         Debug.Log("Pause game");
         Time.timeScale = 0f;
         gamePaused = true;
+        MusicManager.Instance.ChangeMusic(MusicManager.Instance.pauseClip);
     }
 
     public void ResumeGame() {
         Debug.Log("Resume game");
         Time.timeScale = 1f;
         gamePaused = false;
+        MusicManager.Instance.ChangeMusic(MusicManager.Instance.resumeClip);
     }
 
     void PauseCheck() {
@@ -89,9 +91,11 @@ public class GameManager : MonoBehaviour {
 
         if (win) {
             Debug.Log("You win!!");
+            MusicManager.Instance.PlayClip(MusicManager.Instance.winClip);
         }
         else {
             Debug.Log("You Lose!!");
+            MusicManager.Instance.PlayClip(MusicManager.Instance.loseClip);
         }
     }
 

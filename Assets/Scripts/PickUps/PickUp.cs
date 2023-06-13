@@ -11,10 +11,11 @@ public class PickUp : MonoBehaviour
 
     public virtual void Picked() {
         Debug.Log("Podnioslem");
+        MusicManager.Instance.PlayClip(MusicManager.Instance.pickUpClip);
         Destroy(this.gameObject);
     }
 
     public void Rotation() {
-        transform.Rotate(new Vector3(0, 10 * Time.deltaTime, 0));
+        transform.Rotate(new Vector3(0, 15 * Time.deltaTime, 0));
     }
 }

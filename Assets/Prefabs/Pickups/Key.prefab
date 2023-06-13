@@ -47,6 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorKey: 0
+  red: {fileID: 2100000, guid: 3dd04909d412c0d4c9907455f2a34115, type: 2}
+  green: {fileID: 2100000, guid: ac3d06c115e6f78469169bd87c5a5055, type: 2}
+  gold: {fileID: 2100000, guid: dc802f4ae6e96334a8ac837598e3ccbb, type: 2}
 --- !u!65 &6081532895391909158
 BoxCollider:
   m_ObjectHideFlags: 0
