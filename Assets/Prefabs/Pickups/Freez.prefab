@@ -95,7 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5132564170171613016}
   - component: {fileID: 5132564170171613017}
-  - component: {fileID: 5132564170171613018}
+  - component: {fileID: 4154673100914558065}
   m_Layer: 0
   m_Name: Freez
   m_TagString: PickUp
@@ -132,7 +132,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5132564170171613018
+--- !u!114 &4154673100914558065
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5132564170171613019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13d6e3338b819d941861306630117790, type: 3}
+  m_Script: {fileID: 11500000, guid: 942e3f908f4f2544699de8637758bb96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToAdd: 5
+  FreezTime: 10
